@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Atlantic Entry Solutions mark" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- NOTE: simplified placeholder of the Atlantic Entry building mark.
+       Replace with the vectorized artwork from the real Logo.pdf before launch. -->
+  <!-- left medium tower -->
+  <path d="M13 54 V27 H21 V54" />
+  <!-- tall peaked twin tower -->
+  <path d="M23 54 V18 L28 10 L33 18 V54" />
+  <path d="M28 12 V54" />
+  <!-- right slant-roof building -->
+  <path d="M35 54 V31 L53 21 V54" />
+  <!-- wavy band -->
+  <path d="M8 41 C 18 36, 26 46, 34 41 S 50 36, 56 41" />
+  <!-- arched entry door -->
+  <path d="M40 54 V47 C 40 43, 48 43, 48 47 V54" />
+  <!-- baseline -->
+  <path d="M7 54 H57" />
+</svg>

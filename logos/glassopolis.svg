@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" role="img" aria-label="Glassopolis">
+  <!-- Placeholder wordmark — replace with official Glassopolis vector art. -->
+  <rect x="8" y="26" width="36" height="36" rx="4" fill="#0093B2"/>
+  <rect x="16" y="34" width="9" height="20" fill="#fff" opacity="0.9"/>
+  <rect x="27" y="34" width="9" height="20" fill="#fff" opacity="0.55"/>
+  <text x="58" y="46" font-family="Archivo, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="0.3" fill="#0093B2">GLASSOPOLIS</text>
+  <text x="59" y="64" font-family="Arial, sans-serif" font-size="11" letter-spacing="2.5" fill="#555">FIRE-RATED GLASS</text>
+</svg>

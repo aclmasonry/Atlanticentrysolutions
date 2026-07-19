@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" role="img" aria-label="Anemostat">
+  <!-- Placeholder wordmark — replace with official Anemostat vector art.
+       Colour #026CB8 sampled from the official co-branded NGP/Anemostat logo. -->
+  <rect x="8" y="26" width="36" height="36" rx="4" fill="#026CB8"/>
+  <path d="M15 36 h22 M15 44 h22 M15 52 h22" stroke="#fff" stroke-width="3"/>
+  <text x="58" y="46" font-family="Archivo, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="0.4" fill="#026CB8">ANEMOSTAT</text>
+  <text x="59" y="65" font-family="Arial, sans-serif" font-size="11" letter-spacing="2.5" fill="#555">VISION &amp; LOUVERS</text>
+</svg>

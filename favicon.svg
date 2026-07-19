@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Atlantic Entry Solutions">
+  <rect width="64" height="64" rx="12" fill="#182a49"/>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 50 V27 H22 V50"/>
+    <path d="M24 50 V19 L29 12 L34 19 V50"/>
+    <path d="M36 50 V31 L51 22 V50"/>
+    <path d="M11 39 C 20 35, 27 44, 33 39 S 47 35, 53 39"/>
+    <path d="M40 50 V44 C 40 41, 47 41, 47 44 V50"/>
+    <path d="M11 50 H53"/>
+  </g>
+</svg>

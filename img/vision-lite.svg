@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" role="img" aria-label="Fire-rated door with a narrow vision lite" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22365a"/>
+      <stop offset="1" stop-color="#0a1424"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fd4e6"/>
+      <stop offset="0.5" stop-color="#0093B2"/>
+      <stop offset="1" stop-color="#0a7186"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9d2e0"/>
+      <stop offset="0.5" stop-color="#eef2f7"/>
+      <stop offset="1" stop-color="#aeb9cb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="560" fill="url(#bg)"/>
+  <!-- blueprint grid -->
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <path d="M40 0V560M120 0V560M200 0V560M280 0V560M360 0V560M440 0V560"/>
+    <path d="M0 40H480M0 120H480M0 200H480M0 280H480M0 360H480M0 440H480M0 520H480"/>
+  </g>
+
+  <!-- frame -->
+  <rect x="120" y="60" width="240" height="440" rx="6" fill="none" stroke="url(#steel)" stroke-width="10"/>
+  <!-- door slab -->
+  <rect x="136" y="76" width="208" height="408" rx="3" fill="#182a49" stroke="#33456b" stroke-width="2"/>
+
+  <!-- narrow vision lite -->
+  <rect x="176" y="120" width="56" height="300" rx="3" fill="url(#steel)"/>
+  <rect x="184" y="128" width="40" height="284" rx="2" fill="url(#glass)" opacity="0.92"/>
+  <!-- glass sheen -->
+  <path d="M188 140 L220 132 L220 200 L188 210 Z" fill="#ffffff" opacity="0.18"/>
+  <path d="M188 250 L220 240 L220 300 L188 312 Z" fill="#ffffff" opacity="0.10"/>
+
+  <!-- lever hardware -->
+  <circle cx="312" cy="300" r="7" fill="url(#steel)"/>
+  <rect x="286" y="296" width="28" height="8" rx="4" fill="url(#steel)"/>
+
+  <!-- perimeter seal ticks -->
+  <g fill="#c99a3f">
+    <rect x="120" y="70" width="240" height="4" rx="2" opacity="0.85"/>
+    <rect x="120" y="486" width="240" height="6" rx="3" opacity="0.85"/>
+  </g>
+
+  <!-- UL badge -->
+  <g transform="translate(300,120)">
+    <circle r="26" fill="#0a1424" stroke="#c99a3f" stroke-width="2"/>
+    <text y="-2" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">UL</text>
+    <text y="13" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c99a3f">10C</text>
+  </g>
+</svg>

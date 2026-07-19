@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 88" role="img" aria-label="National Guard Products">
+  <!-- Placeholder wordmark — replace with official NGP vector art. -->
+  <path d="M26 20 l18 7 v14 c0 12 -9 19 -18 23 c-9 -4 -18 -11 -18 -23 v-14 z" fill="#C8102E"/>
+  <text x="26" y="50" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="16" font-weight="800" fill="#fff">NGP</text>
+  <text x="58" y="42" font-family="Archivo, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="0.5" fill="#C8102E">NATIONAL GUARD</text>
+  <text x="59" y="62" font-family="Arial, sans-serif" font-size="12" letter-spacing="3.5" fill="#555">PRODUCTS</text>
+</svg>

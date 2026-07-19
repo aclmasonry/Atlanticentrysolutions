@@ -1,0 +1,53 @@
+# Atlantic Entry Solutions — Apache config for GoDaddy cPanel / Linux hosting.
+# Copied verbatim into dist/ at build (it lives in /public). Only used on
+# Apache-style static hosting (deploy path 8a). Ignored by Cloudflare Pages /
+# Netlify / Firebase (deploy path 8b), which have their own redirect config.
+
+# ---- Force HTTPS + canonical www host ----
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # http → https
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # apex → www (atlanticentry.ca → www.atlanticentry.ca)
+  RewriteCond %{HTTP_HOST} ^atlanticentry\.ca$ [NC]
+  RewriteRule ^ https://www.atlanticentry.ca%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ---- Custom 404 (Astro emits /404.html at the dist root) ----
+ErrorDocument 404 /404.html
+
+# ---- Compression ----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# ---- Caching ----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # Hashed, immutable build assets (Astro emits /_astro/*)
+  <FilesMatch "\.(?:woff2|woff|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(?:css|js)$">
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(?:jpg|jpeg|png|gif|webp|avif|svg|ico)$">
+    ExpiresDefault "access plus 30 days"
+  </FilesMatch>
+  # HTML should always revalidate so deploys go live immediately
+  <FilesMatch "\.html$">
+    ExpiresDefault "access plus 0 seconds"
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ---- Security headers ----
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
